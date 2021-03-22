@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Sketchnator" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="CORE/;GUI/;external/;serialization/;Extension/" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Sketchnator" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Environment>
+				<Variable name="eigendir" value="C:\Libraries\Eigen" />
+				<Variable name="glmdir" value="C:\Libraries\glm-master" />
+				<Variable name="harudir" value="C:\Program Files (x86)\libharu" />
+				<Variable name="rapidjsondir" value="C:\Libraries\rapidjson-master" />
+				<Variable name="wxdir" value="C:\Libraries\wx" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=gnu++17" />
+			<Add option="-Og" />
+			<Add directory="$(wxdir)/include" />
+			<Add directory="$(wxdir)/lib/gcc810_x64_dll/mswu" />
+			<Add directory="$(glmdir)" />
+			<Add directory="$(eigendir)" />
+			<Add directory="$(rapidjsondir)/include" />
+			<Add directory="$(harudir)/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(wxdir)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-s" />
+			<Add option="-l:libhpdfs.a" />
+			<Add option="-lsetupapi" />
+			<Add option="-l:libwxbase31u.a" />
+			<Add option="-l:libwxmsw31u_core.a" />
+			<Add directory="C:/Program Files (x86)/libharu/lib" />
+			<Add directory="$(wxdir)/lib/gcc810_x64_dll" />
+		</Linker>
+		<Unit filename="ConstraintBrowser.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="ConstraintBrowser.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="ContainerSerialization.h">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="DimensionEditDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="DimensionEditDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="DimensionRenderer.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="Document.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="Document.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="DrawingLayout.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="DrawingLayout.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="DrawingStyle.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="DrawingStyle.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="ExtendedColour.cpp">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedColour.h">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedFont.cpp">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedFont.h">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedMouseEvent.cpp">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedMouseEvent.h">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedPen.cpp">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedPen.h">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="ExtendedString.h">
+			<Option virtualFolder="Extension/" />
+		</Unit>
+		<Unit filename="GuidObject.cpp">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="GuidObject.h">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="GuidObjectContainer.h">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="LayoutEditDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="LayoutEditDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="Osifont.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="Osifont.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="PolymorphicSerializableObject.cpp">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="PolymorphicSerializableObject.h">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="Serializable.h">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="SerializationContext.cpp">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="SerializationContext.h">
+			<Option virtualFolder="serialization/" />
+		</Unit>
+		<Unit filename="ShortcutButtonGroup.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="ShortcutButtonGroup.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="Sketch.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchAnnotation.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchAnnotation.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchAnnotationText.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchAnnotationText.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchConstraints.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchConstraints.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchDimensionalConstraints.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchDimensionalConstraints.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchEquations.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchEquations.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchFeatures.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchFeatures.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchGeometricConstraints.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchGeometricConstraints.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchIntersection.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchIntersection.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchRenderer.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchRenderer.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchSnaps.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchSnaps.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchTool.cpp">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SketchTool.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="SnapBallon.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="SnapBalloon.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="StyleEditorDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="StyleEditorDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="TextAnnotationEditDialog.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="TextAnnotationEditDialog.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="ToggleButtonGroup.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="ToggleButtonGroup.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="almost_equal.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="dirUtil.cpp">
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="dirUtil.h">
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="enum_flag_operators.h">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="haruWrapper.cpp">
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="haruWrapper.h">
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="iconButton.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="iconButton.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="iconLoader.cpp">
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="iconLoader.h">
+			<Option virtualFolder="external/" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="sketch.h">
+			<Option virtualFolder="CORE/" />
+		</Unit>
+		<Unit filename="sketchPanel.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="sketchPanel.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="sketchnatorGUI.cpp">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Unit filename="sketchnatorGUI.h">
+			<Option virtualFolder="GUI/" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
